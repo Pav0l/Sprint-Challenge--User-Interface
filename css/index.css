@@ -71,6 +71,32 @@ p {
     margin: 0 auto;
 }
 
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid blue;
+}
+
+header nav {
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* align-content: flex-end;  */
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid green;
+    align-items: flex-end;
+}
+
+.img-jumbo {
+    width: 100%;
+    margin: 20px 0;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
