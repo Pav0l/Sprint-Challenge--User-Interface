@@ -71,11 +71,44 @@ p {
     margin: 0 auto;
 }
 
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3%;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding-top: 1em;
+}
+
+header nav a:hover {
+    animation-name: pulse;
+    animation-duration: 0.5s;
+}
+
+.img-jumbo {
+    width: 100%;
+    margin: 20px 0;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.top-content-about {
+    padding: 0 2% 2% 2%;
     border-bottom: 1px dashed black;
 }
 
@@ -104,12 +137,114 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.middle-content-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.middle-section-about {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    margin-bottom: 4%;
+    border-bottom: 1px dashed black;
+}
+
+.middle-section-about h2 {
+    margin-top: 10px;
+}
+
+.learn-more-btn {
+    padding: 7px 10px;
+    margin-top: 15px;
+    width: 130px;
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.middle-section-blog {
+    display: flex;
+    flex-direction: column;
+    margin: 4% 2%;
+    border-bottom: 1px dashed black;
+}
+
+.blog-post {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px dashed gray;
+    border-top: 1px dashed grey;
+    border-radius: 10px;
+    padding: 1em;
+    margin-bottom: 2%;
+}
+
+.blog-post:hover {
+    animation-name: pulse-article;
+    animation-duration: 1s;
+    cursor: pointer;
+}
+
+.blog-post h1 {
+    font-size: 1.3em;
+}
+
+.box:hover {
+    animation-name: rubberBand;
+    animation-duration: 0.75s;
+}
+
+.box:nth-child(1) {
+    background-color: teal;
+}
+
+.box:nth-child(2) {
+    background-color: gold;
+}
+
+.box:nth-child(3) {
+    background-color: cadetblue;
+}
+
+.box:nth-child(4) {
+    background-color: coral;
+}
+
+.box:nth-child(5) {
+    background-color: crimson;
+}
+
+.box:nth-child(6) {
+    background-color: forestgreen;
+}
+
+.box:nth-child(7) {
+    background-color: darkorchid;
+}
+
+.box:nth-child(8) {
+    background-color: hotpink;
+}
+
+.box:nth-child(9) {
+    background-color: indigo;
+}
+
+.box:nth-child(10) {
+    background-color: dodgerblue;
 }
 
 .bottom-content {
@@ -124,6 +259,11 @@ p {
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+.bot-content-about {
+    padding: 0 2% 2% 2%;
+    margin-bottom: 20px;
 }
 
 footer {
@@ -143,4 +283,90 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+.contact-container{
+    background-color: rgb(241, 240, 252);
+    padding: 2%;
+    margin: 5%;
+}
+
+input[type=text], select, input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+  
+input[type=submit] {
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white;
+}
+
+input[type=submit]:hover {
+    background-color: lightgray;
+}
+
+@keyframes pulse {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.2, 1.2, 1.2);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes pulse-article {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.03, 1.03, 1.03);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes rubberBand {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+  
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
+    }
 }
