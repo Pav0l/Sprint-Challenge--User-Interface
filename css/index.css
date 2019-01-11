@@ -173,6 +173,34 @@ header nav a:hover {
     text-align: center;
 }
 
+.middle-section-blog {
+    display: flex;
+    flex-direction: column;
+    /* padding: 20px 0; */
+    margin: 4% 2%;
+    border-bottom: 1px dashed black;
+}
+
+.blog-post {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px dashed gray;
+    border-top: 1px dashed grey;
+    border-radius: 10px;
+    padding: 1em;
+    margin-bottom: 2%;
+}
+
+.blog-post:hover {
+    animation-name: pulse-article;
+    animation-duration: 1s;
+    cursor: pointer;
+}
+
+.blog-post h1 {
+    font-size: 1.3em;
+}
+
 .box:hover {
     animation-name: rubberBand;
     animation-duration: 0.75s;
@@ -263,6 +291,20 @@ footer nav a {
   
     50% {
       transform: scale3d(1.2, 1.2, 1.2);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes pulse-article {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.05, 1.05, 1.05);
     }
   
     to {
