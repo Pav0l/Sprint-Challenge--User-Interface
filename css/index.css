@@ -106,8 +106,7 @@ header nav a {
 }
 
 .top-content-about {
-    padding: 0 1% 2% 1%;
-    margin-bottom: 20px;
+    padding: 0 2% 2% 2%;
     border-bottom: 1px dashed black;
 }
 
@@ -146,20 +145,28 @@ header nav a {
 .middle-content-about {
     display: flex;
     flex-wrap: wrap;
-    align-content: space-around;
+    justify-content: space-between;
     padding: 2%;
 }
 
-.middle-section {
-    width: 40%;
+.middle-section-about {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    margin-bottom: 4%;
     border-bottom: 1px dashed black;
 }
 
+.middle-section-about h2 {
+    margin-top: 10px;
+}
 
 .learn-more-btn {
-    padding: 5px 10px;
-    width: 15%;
-    border: 1px solid black;
+    padding: 7px 10px;
+    margin-top: 15px;
+    width: 130px;
+    border: 2px solid black;
     border-radius: 8px;
     text-align: center;
 }
@@ -219,7 +226,7 @@ header nav a {
 }
 
 .bot-content-about {
-    padding: 0 1% 2% 1%;
+    padding: 0 2% 2% 2%;
     margin-bottom: 20px;
 }
 
