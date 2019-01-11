@@ -74,22 +74,19 @@ p {
 .header-nav {
     display: flex;
     justify-content: space-between;
-    border: 1px solid blue;
+    padding-top: 3%;
 }
 
 header nav {
-    border: 1px solid red;
     width: 100%;
     display: flex;
     justify-content: space-around;
-    /* align-content: flex-end;  */
 }
 
 header nav a {
     text-decoration: none;
     color: black;
-    border: 1px solid green;
-    align-items: flex-end;
+    padding-top: 1em;
 }
 
 .img-jumbo {
