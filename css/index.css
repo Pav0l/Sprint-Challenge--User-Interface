@@ -284,6 +284,38 @@ footer nav a {
     text-decoration: none;
 }
 
+.contact-container{
+    /* background-color: lightgrey; */
+    padding: 2%;
+    border: 1px dashed black;
+    margin: 2%;
+}
+
+input[type=text], select, input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+  
+input[type=submit] {
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+input[type=submit]:hover {
+background-color: lightgray;
+}
+  
+
+
+
 @keyframes pulse {
     from {
       transform: scale3d(1, 1, 1);
@@ -304,14 +336,13 @@ footer nav a {
     }
   
     50% {
-      transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.03, 1.03, 1.03);
     }
   
     to {
       transform: scale3d(1, 1, 1);
     }
 }
-
 
 @keyframes rubberBand {
     from {
