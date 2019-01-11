@@ -370,3 +370,78 @@ input[type=submit]:hover {
       transform: scale3d(1, 1, 1);
     }
 }
+
+@media screen and (min-width: 300px) and (max-width: 799px) {
+    
+    .container {
+		margin: auto;
+		max-width: 95%;
+	}
+    
+    .header-nav {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding-top: 3%;
+    }
+
+    div.header-nav img {
+        align-self: center;
+    }
+
+    .top-content {
+        display: flex;
+        margin-bottom: 20px;
+        border-bottom: 1px dashed black;
+    }
+
+    .top-content .text-container {
+        width: 100%;
+    }
+
+    .middle-content .boxes .box {
+        width: 12.5%;
+        min-width: 50px;
+        height: 10vh;
+    }
+
+    .bottom-content {
+        display: flex;
+        margin: 0 2% 20px;
+        flex-direction: column;
+    }
+
+    .text-container {
+        margin-bottom: 2%;
+        padding-bottom: 20px;
+    }
+
+    footer nav {
+        width: 100%;
+    }
+
+    .middle-content-about {
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+    }
+    
+    .middle-section-about {
+        width: 100%;
+    }
+
+    .middle-content-about .middle-section-about img {
+        max-width: 100%;
+        align-self: center;
+    }
+
+    .learn-more-btn {
+        margin: 1% auto;
+    }
+
+    * {
+        text-align: center;
+    }
+
+
+}
